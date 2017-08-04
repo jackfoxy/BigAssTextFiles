@@ -1,0 +1,25 @@
+type project
+title
+    BigAssTextFiles
+owners
+    Jack Fox
+authors 
+    Jack Fox
+projectUrl
+    https://github.com/jackfoxy/BigAssTextFiles
+iconUrl
+    https://raw.githubusercontent.com/jackfoxy/BigAssTextFiles/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/jackfoxy/BigAssTextFiles/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    file files IO F# fsharp
+summary
+    search and sample very large text files
+description
+    search and sample very large text files
+
+
