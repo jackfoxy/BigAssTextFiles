@@ -11,8 +11,13 @@ module console1 =
 
     [<EntryPoint>]
     let main argv = 
+        //if argv.[0] has $ in first character accessing directly either of next 2 lines throws in release, not in debug
+        // go figure
+        let data = argv.[0]
+
+        printfn "input length %i %s" data.Length  data
+        let data = System.Text.Encoding.ASCII.GetBytes(data)
         
-        let data = System.Text.Encoding.ASCII.GetBytes(argv.[0])
         let sha = new System.Security.Cryptography.SHA1CryptoServiceProvider()
         let hash = sha.ComputeHash data
         let targetHash = ByteToHex hash
@@ -61,5 +66,4 @@ module console1 =
 
         loop 0
 
-        System.Console.ReadKey() |> ignore
         0
