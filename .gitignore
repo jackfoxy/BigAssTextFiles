@@ -100,9 +100,6 @@ publish/
 # Publish Web Output
 *.Publish.xml
 
-# Enable nuget.exe in the .nuget folder (though normally executables are not tracked)
-!.nuget/NuGet.exe
-
 # Windows Azure Build Output
 csx
 *.build.csdef
@@ -179,7 +176,6 @@ release.sh
 localpackages/
 paket-files
 *.orig
-.paket/paket.exe
 docsrc/content/license.md
 docsrc/content/release-notes.md
 .fake
